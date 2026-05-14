@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Lista de Tarefas</h1>
+
+        <div class="formulario">
+            <input type="text" id="titulo" placeholder="Título da tarefa">
+            <textarea id="descricao" placeholder="Descrição da tarefa"></textarea>
+            <input type="text" id="prazo" placeholder="Data de entrega (dd/mm/aaaa)" maxlength="10">
+            <button id="adicionar">Adicionar tarefa</button>
+        </div>
+
+        <div id="lista-tarefas"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

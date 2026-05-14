@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0f0f0f;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+
+.container {
+    width: 100%;
+    max-width: 550px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 25px;
+    color: #00ff88;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+input,
+textarea {
+    background: #1c1c1c;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    padding: 14px;
+    font-size: 15px;
+}
+
+textarea {
+    resize: none;
+    min-height: 90px;
+}
+
+button {
+    border: none;
+    border-radius: 12px;
+    padding: 14px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: scale(1.02);
+}
+
+#adicionar {
+    background: #00ff88;
+    color: black;
+}
+
+#lista-tarefas {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+
+/* ========================= */
+/* CARD */
+/* ========================= */
+
+.tarefa {
+    background: #1a1a1a;
+    border-radius: 16px;
+    padding: 18px;
+    border-left: 5px solid #00ff88;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 14px;
+
+    gap: 10px;
+}
+
+.topo h2 {
+    font-size: 20px;
+    word-break: break-word;
+}
+
+.data {
+    color: #00ff88;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.inferior {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.descricao {
+    color: #c9c9c9;
+    line-height: 1.4;
+    flex: 1;
+    word-break: break-word;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn-concluir {
+    background: #00ff88;
+    width: 45px;
+    height: 45px;
+}
+
+.btn-remover {
+    background: #ff1d1d;
+    color: white;
+    width: 45px;
+    height: 45px;
+}
+
+.concluida {
+    opacity: 0.6;
+    border-left: 5px solid gray;
+}
+
+.concluida h2 {
+    text-decoration: line-through;
+}
